@@ -1,0 +1,46 @@
+{
+  "name": "purplehcm-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/papaparse": "^5.3.14",
+    "axios": "^1.7.3",
+    "chart.js": "^4.4.4",
+    "i18next": "^23.12.2",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.5.2",
+    "next": "14.2.5",
+    "next-auth": "^4.24.7",
+    "next-i18next": "^15.3.1",
+    "papaparse": "^5.4.1",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.1",
+    "react-i18next": "^15.0.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-lottie-player": "^2.1.0",
+    "react-query": "^3.39.3",
+    "react-select": "^5.8.0",
+    "react-toastify": "^10.0.5",
+    "xlsx": "^0.18.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-i18next": "^8.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

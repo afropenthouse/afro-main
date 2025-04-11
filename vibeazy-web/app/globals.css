@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --app_primary: #650928;
+    --app_tertiary_2f: #2f3133;
+    --app_tertiary_5d: #5d626d;
+    --app_gray_cec: #cec7c7;
+    --app_gray_f8f: #f8f8f8;
+    --inter: var(--font-inter);
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background: #171717;
+        --foreground: #ededed;
+    }
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    font-family: var(--inter);
+    background: var(--background);
+    color: var(--foreground);
+    margin-inline: auto;
+    overflow-x: hidden;
+}
+
+/* .app_form_item {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    gap: 0.625rem;
+    font-size: 0.875rem;
+}
+
+.app_label {
+    font-weight: 400;
+    line-height: 1;
+}
+
+.app_input,
+.app_input_textarea {
+    height: 2.75rem;
+    line-height: 1.25rem;
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+    border: 1px solid var(--app_gray_cec);
+    border-radius: 0.5rem;
+    color: var(--app_tertiary_2f);
+}
+.app_input_textarea {
+    height: 10rem;
+    resize: none;
+}
+.app_input::placeholder,
+.app_input::-moz-placeholder,
+.app_input::-webkit-input-placeholder {
+    color: var(--app_tertiary_5d);
+}
+
+.app_submit_btn {
+    height: 2.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding-block: 0.75rem;
+    padding-inline: 1rem;
+    background-color: var(--app_primary);
+    color: var(--background);
+    border-radius: 1.5rem;
+}
+.app_submit_btn:hover {
+    opacity: 70%;
+}
+.app_submit_btn:active {
+    scale: 0.97;
+}
+.app_submit_btn:disabled {
+    background-color: var(--app_gray_cec);
+    opacity: 70%;
+} */
+
+.app_focus {
+    @apply ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app_tertiary_5d focus-visible:ring-offset-2;
+}
+
+a,
+button {
+    cursor: pointer;
+    transition: color background-color border-color outline-color
+        text-decoration-color fill stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color background-color border-color outline-color
+        text-decoration-color fill stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: color background-color border-color outline-color
+        text-decoration-color fill stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: color background-color border-color outline-color
+        text-decoration-color fill stroke 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        background-color: var(--app_gray_f8f);
+    }
+}

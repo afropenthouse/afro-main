@@ -1,0 +1,4 @@
+{
+  "welcome": "Bienvenue dans notre application",
+  "description": "Ceci est un exemple d'utilisation de react-i18next avec Next.js"
+}

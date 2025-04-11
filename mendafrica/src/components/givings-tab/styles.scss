@@ -1,0 +1,78 @@
+.tabs-container {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px; /* Add padding to ensure edges are not cut off */
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      margin-top: 1rem;
+  }
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #666;
+    border-radius: 12px;
+    margin: 0 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover:not(.active) {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #333;
+    }
+
+    @media only screen and (max-width: 500px) {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  
+  .tab.active {
+    background-color: white;
+    color: #000;
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  .tab-content {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0 0 12px 12px; /* Make sure content area aligns with rounded corners */
+    background-color: #fff;
+  }
+  
+  .empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #EBCC48; // Dashed border for emphasis
+    border-radius: 12px;
+    background-color: #f9fafb; // Light background color
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+
+    .empty-title {
+      font-size: 20px;
+      color: #4b5563; // Darker text color
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+  

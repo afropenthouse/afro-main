@@ -1,0 +1,135 @@
+.verificationSuccess-modal,
+.verificationSuccess-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+
+  .modal-content {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // max-width: 35rem;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 2rem 4rem;
+    gap: 3rem;
+    border-radius: .7rem;
+    @media only screen and (max-width: 500px) {
+    min-width: auto;
+    // padding: 2rem 1rem;
+    padding: 2rem 0;
+    width: 90vw;
+    top: 50%;
+    }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      .header {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .icon {
+          background: #D1FADF;
+          padding: .5rem;
+          border-radius: 50%;
+        }
+
+      }
+
+      h1 {
+        color: #1B1818;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        letter-spacing: -0.02em;
+        text-align: center;
+
+
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #1B1818;
+      }
+    }
+
+
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      button {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        letter-spacing: -0.05em;
+        text-align: left;
+        width: 473px;
+        height: 51px;
+        padding: 12px 196px 12px 196px;
+        gap: 10px;
+        border-radius: 6.93px;
+       
+        background-color: #EBCC48;
+        @media only screen and (max-width: 500px) {
+          padding: .5rem 5rem;
+          text-align: center;
+          width: auto;
+          height: auto;
+          line-height: normal;
+          gap: 0;
+        }
+      }
+
+      P {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      span {
+        color: #EBCC48;
+      }
+    }
+  }
+}
+
+.verificationSuccess-overlay {
+  background: rgba(252, 252, 252, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(8px);
+    @media only screen and (max-width: 500px) {
+      background: rgba(252, 252, 252, 0.7);
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+  }
+}
+
+
+.verificationSuccess-modal{
+  z-index: 1000;
+}

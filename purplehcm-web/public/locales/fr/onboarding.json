@@ -1,0 +1,191 @@
+{
+  "signupEntryHeader": "Inscription",
+  "signupEntrySubHeading": "Entrez vos informations ci-dessous pour créer votre compte.",
+  "signUpFirstName": "Prénom",
+  "signUpFirstNamePlaceholder": "Entrez votre prénom",
+  "signUpLastName": "Nom de famille",
+  "signUpLastNamePlaceholder": "Entrez votre nom de famille",
+  "signUpPhoneNumber": "Numéro de téléphone",
+  "signUpPhoneNumberPlaceholder": "Entrez le numéro",
+  "signUpEmailAddress": "Adresse e-mail",
+  "signUpEmailAddressPlaceholder": "Entrez l'adresse e-mail",
+  "signUpSetPassword": "Définir le mot de passe",
+  "signUpPasswordPlaceholder": "Minimum de 8 caractères",
+  "signUpConfirmPassword": "Confirmez le mot de passe",
+  "passwordAltText": "Les mots de passe doivent contenir au moins huit caractères, y compris au moins 1 lettre et 1 chiffre.",
+  "confirmPasswordAltText": "Assurez-vous que vos mots de passe correspondent",
+  "signUpEntryButtonText": "S'inscrire",
+  "OR": "OU",
+  "termsAndPrivacy": "J'accepte les Conditions & Confidentialité",
+  "googleSignUp": "S'inscrire avec Google",
+  "microsoftSignUp": "S'inscrire avec Microsoft",
+  "entryLevelExistingUser": "Vous avez déjà un compte?",
+  "entryLevelExistingUserCTA": "Se connecter",
+
+  "emailAuthHeader": "Authentification par e-mail (OTP)",
+  "emailAuthFirstSubHeader": "Nous avons envoyé un code OTP à votre e-mail enregistré",
+  "emailAuthSecondSubHeader": "entrez le code ci-dessous.",
+  "submit": "Soumettre",
+  "resend": "Renvoyer",
+  "back": "Retour",
+
+  "loginEntryHeader": "Bienvenue !!",
+  "loginEntrySubHeading": "Veuillez entrer votre e-mail et mot de passe pour accéder à l'application",
+  "loginEmail": "Adresse e-mail",
+  "loginEmailPlaceholder": "Adresse e-mail",
+  "loginPassword": "Mot de passe",
+  "loginPasswordPlaceholder": "Entrez le mot de passe",
+  "googleLogin": "Connexion avec Google",
+  "microsoftLogin": "Connexion avec Microsoft",
+  "entryLevelNewUser": "Vous n'avez pas de compte?",
+  "entryLevelNewUserCTA": "S'inscrire",
+  "loginEntryButtonText": "Connexion",
+  "forgotPassword": "Mot de passe oublié?",
+
+  "forgotPasswordHeader": "Mot de passe oublié",
+  "forgotPasswordSubHeader": "Entrez votre e-mail enregistré pour pouvoir récupérer votre mot de passe",
+  "forgotPasswordEmail": "Adresse e-mail",
+  "forgotPasswordEmailPlaceholder": "Adresse e-mail",
+
+  "otpAuthHeader": "Authentification OTP",
+  "otpAuthFirstSubHeader": "Nous avons envoyé un code OTP à votre e-mail enregistré",
+  "otpAuthSecondSubHeader": "pour vérifier que c'est vous",
+
+  "createPasswordHeader": "Créer un mot de passe",
+  "createPasswordSubHeader": "Créez un nouveau mot de passe pour votre compte",
+  "createPasswordPassword": "Mot de passe",
+  "createPasswordPasswordPlaceholder": "Entrez le mot de passe",
+  "createPasswordConfirmPassword": "Confirmez le mot de passe",
+  "createPasswordConfirmPasswordPlaceholder": "Entrez le mot de passe",
+
+  "passwordUpdatedHeader": "Mot de passe mis à jour",
+  "passwordUpdatedSubHeader": "Le mot de passe de votre compte a été mis à jour avec succès",
+  "passwordUpdatedButtonText": "Aller à la connexion",
+
+  "companyDetailsHeader": "Configurer les détails de votre organisation",
+  "companyDetailsSubHeader": "Veuillez fournir les informations de votre entreprise avec précision",
+  "companyDetailsOrganizationName": "Nom de l'organisation",
+  "companyDetailsOrganizationNamePlaceholder": "Entrez le nom",
+  "companyDetailsCompanyType": "Type d'entreprise",
+  "companyDetailsCompanyTypeOption": [
+    { "label": "Startup", "value": "Startup" },
+    {
+      "label": "Petite et moyenne entreprise (PME)",
+      "value": "Petite et moyenne entreprise (PME)"
+    },
+    { "label": "Entreprise", "value": "Entreprise" },
+    {
+      "label": "Multinationale",
+      "value": "Multinationale"
+    },
+    {
+      "label": "Organisation non gouvernementale (ONG)",
+      "value": "Organisation non gouvernementale (ONG)"
+    },
+    { "label": "Société privée", "value": "Société privée" }
+  ],
+  "startup": "Startup",
+  "companyDetailsCompanyEmail": "E-mail d'entreprise",
+  "companyDetailsCompanyEmailPlaceholder": "Entrez l'adresse e-mail",
+  "companyDetailsCountry": "Pays",
+  "companyDetailsFeaturesHeader": "Quelle fonctionnalité souhaitez-vous utiliser ? (Optionnel)",
+  "companyDetailsFeatures": [
+    "Gestion des équipes",
+    "Gestion du temps",
+    "Gestion des présences",
+    "Paie"
+  ],
+  "companyDetailsButtonText": "Continuer",
+
+  "legalDetailsHeader": "Créez votre entreprise",
+  "legalDetailsSubHeader": "Veuillez fournir les informations de votre entreprise avec précision",
+  "legalDetailsCautionHeader": "Avez-vous une entité sous votre organisation?",
+  "legalDetailsCautionSubHeader": "Dans le contexte d'une organisation, une entité se réfère à une entreprise qui a été formée pour mener des affaires sous l'égide d'une organisation enregistrée.",
+  "legalDetailsCautionSupportingText": "Vous pouvez passer cette étape si vous n'avez pas d'entité sous votre organisation et vous aurez également l'opportunité de la créer plus tard sous votre compte",
+  "legalDetailsText": "Détails légaux",
+  "legalDetailsOrganizationName": "Nom légal de la société",
+  "legalDetailsOrganizationNamePlaceholder": "Entrez le nom",
+  "legalDetailsCompanyType": "Type de société",
+  "legalDetailsCompanyTypeOption": [
+    {
+      "label": "Filiale d'une société étrangère",
+      "value": "Filiale d'une société étrangère"
+    },
+    {
+      "label": "Société à responsabilité limitée par garantie",
+      "value": "Société à responsabilité limitée par garantie"
+    },
+    { "label": "Incorporation", "value": "Incorporation" },
+    {
+      "label": "Société en nom collectif",
+      "value": "Société en nom collectif"
+    },
+    {
+      "label": "Sociétés par actions",
+      "value": "Sociétés par actions"
+    },
+    {
+      "label": "Société à responsabilité limitée (SARL)",
+      "value": "Société à responsabilité limitée (SARL)"
+    },
+    {
+      "label": "Société en commandite",
+      "value": "Société en commandite"
+    },
+    {
+      "label": "Société privée à responsabilité limitée par actions",
+      "value": "Société privée à responsabilité limitée par actions"
+    },
+    {
+      "label": "Société à responsabilité privée",
+      "value": "Société à responsabilité privée"
+    },
+    {
+      "label": "Société publique à responsabilité limitée par actions",
+      "value": "Société publique à responsabilité limitée par actions"
+    },
+    {
+      "label": "Société à responsabilité publique",
+      "value": "Société à responsabilité publique"
+    },
+    {
+      "label": "Entrepreneur individuel / auto-entrepreneur",
+      "value": "Entrepreneur individuel / auto-entrepreneur"
+    }
+  ],
+  "legalDetailsCountryOfIncorporation": "Pays d'incorporation",
+  "legalDetailsPhoneNumber": "Numéro de téléphone",
+  "legalDetailsPhoneNumberPlaceholder": "Entrez le numéro",
+  "legalDetailsIndustry": "Secteur d'activité",
+  "legalDetailsCACNumber": "Numéro d'enregistrement CAC (Optionnel)",
+  "legalDetailsCACNumberPlaceholder": "0000",
+  "legalDetailsTaxId": "ID FISCAL (Optionnel)",
+  "legalDetailsTaxIdPlaceholder": "Entrez l'ID",
+  "legalDetailsSkipText": "Passer",
+  "legalDetailsButtonText": "Suivant",
+  "legalDetailsHeaderText1": "Détails légaux",
+  "legalDetailsHeaderText2": "Adresse de l'entité",
+
+  "entityAddressAnotherEntity": "Créer une autre entité",
+  "entityAddressButtonText": "Soumettre",
+  "entityAddressHeader": "Créez votre entité d'entreprise",
+  "entityAddressSubHeader": "Veuillez fournir les informations de votre entreprise avec précision",
+  "entityAddressText": "Adresse de l'entité",
+  "entityAddressEmail": "E-mail",
+  "entityAddressEmailPlaceholder": "Entrez l'adresse e-mail",
+  "entityAddressAddress": "Adresse enregistrée de l'entité",
+  "entityAddressAddressPlaceholder": "Entrez l'adresse",
+  "entityAddressZipCodes": "Code postal",
+  "entityAddressZipCodesPlaceholder": "Entrez le code",
+  "entityAddressLinkedIn": "URL LinkedIn de l'entreprise",
+  "entityAddressWebsiteUrl": "URL du site Web de l'entreprise",
+  "entityAddressCountry": "Pays",
+  "entityAddressState": "État",
+
+  "accountConfirmationHeader": "Confirmation de votre compte, veuillez patienter.. ",
+  "accountConfirmationSubHeader": "Votre capacité à gérer les personnes dans une organisation est au top. ",
+
+  "accountCreatedHeader": "Compte créé ",
+  "accountCreatedSubHeader": "Votre compte a été créé avec succès, allez à votre tableau de bord pour créer de la magie",
+  "accountCreatedButtonText": "Aller au tableau de bord"
+}

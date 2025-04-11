@@ -1,0 +1,197 @@
+.hero {
+    background: url('../../../public//images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+
+    .heroContent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: space-between;
+        height: 100%;
+
+        .heroText {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            gap: 2rem;
+            margin-top: 7rem;
+
+            h1 {
+                font-size: 52.82px;
+                font-weight: 600;
+                line-height: 73.95px;
+                letter-spacing: 0.01em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: white;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+        }
+
+        .heroButton {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: center;
+
+            p:nth-child(2) {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 5px 10px;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 33.24px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+        }
+    }
+
+    .heroBanner {
+        display: flex;
+        background: #D31C1A;
+        width: fit-content;
+        gap: 1.5rem;
+        padding: 2rem 2rem;
+        position: absolute;
+        bottom: -4rem;
+        right: 0;
+        z-index: 1; // This will make the banner overlap the hero content
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            .icon {
+                color: #F9AFA8;
+                border: 1px solid #F9AFA8CC;
+                border-radius: 50%;
+                padding: 5px 10px;
+                height: 40px;
+                width: 40px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    color: #F9AFA8;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16.37px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18.7px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+
+            .icon {
+                color: #F9AFA8;
+                border: 1px solid #F9AFA8CC;
+                border-radius: 50%;
+                padding: 5px 10px;
+                height: 40px;
+                width: 40px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    color: #F9AFA8;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16.37px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+
+                p {
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18.7px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+            }
+        }
+    }
+
+    // .blueBox {
+    //     width: 40px;
+    //     height: 40px;
+    //     background-color: #09283A;
+    //     position: absolute;
+    //     bottom: 15%;
+    //     right: 0;
+    // }
+
+    // .redBox {
+    //     width: 40px;
+    //     height: 40px;
+    //     background-color: #D31C1A;
+    //     position: absolute;
+    //     bottom: 22%;
+    //     right: 3.2%;
+    // }
+}
+
+.hero {
+    transition: background-image 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  
+    &.fade {
+      opacity: 0.7;
+    }
+  
+    &:not(.fade) {
+      opacity: 1;
+    }
+  }
+  

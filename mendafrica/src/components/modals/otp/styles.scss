@@ -1,0 +1,202 @@
+.otp-modal,
+.otp-overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+
+  .modal-content {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // max-width: 35rem;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 2rem 4rem;
+    gap: 1rem;
+    border-radius: .7rem;
+    @media only screen and (max-width: 500px) {
+     min-width: auto;
+     padding: 2rem 0;
+     width: 90vw;
+     top: 50%;
+  }
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: .2rem;
+
+      .header {
+        display: flex;
+        gap: .2rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .icon {
+          background: #EDEDEE;
+          padding: .5rem;
+          border-radius: 50%;
+        }
+
+      }
+
+      h1 {
+        color: #1B1818;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        letter-spacing: -0.02em;
+        text-align: center;
+
+
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+    }
+
+
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      button {
+        width: 100%;
+        max-width: 400px;
+        min-height: 3rem;
+        padding: 0.75rem 1rem;
+        font-size: clamp(16px, 2vw, 18px);
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #EBCC48;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media only screen and (max-width: 500px) {
+        button {
+            width: 90%;
+            font-size: 16px;
+            padding: 0.5rem;
+        }
+    }
+    
+
+      P {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        padding: 0rem 1rem ;
+      }
+
+      span {
+        color: #EBCC48;
+      }
+
+      .resend-section {
+        margin-top: 1.5rem;
+        text-align: center;
+        
+        p {
+          color: #666;
+          font-size: clamp(14px, 2vw, 16px);
+          margin-bottom: 0.5rem;
+        }
+
+        .resend-button {
+          background: none;
+          border: none;
+          color: #007bff; // or your primary color
+          font-size: clamp(14px, 2vw, 16px);
+          font-weight: 500;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          text-decoration: underline;
+          width: auto;
+          min-height: auto;
+
+          &:hover {
+            color: darken(#007bff, 10%);
+          }
+
+          &:disabled {
+            color: #999;
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .resend-section {
+          margin-top: 1rem;
+          
+          p {
+            font-size: 14px;
+          }
+
+          .resend-button {
+            font-size: 14px;
+            padding: 0.4rem 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.otp-overlay {
+  background: rgba(252, 252, 252, 0.2);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(8px);
+
+  @media only screen and (max-width: 500px) {
+    background: rgba(252, 252, 252, 0.7);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+  }
+}
+
+.otpInput {
+  width: 66px;
+  height: 65px;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  margin: 7px;
+  background-color: #f3f4fe33;
+  border: 1px solid #B3B4C3;
+  outline: none;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+
+.otp-modal {
+  z-index: 1000;
+}

@@ -1,0 +1,331 @@
+/* VenueDetail.css */
+.venue-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    @media screen and (min-width: 768px) {
+        margin-left: 4.3rem;
+    }
+}
+
+.venue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.venue-title-section {
+    flex: 1;
+}
+
+.venue-title-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.venue-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.venue-meta > * {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.venue-category {
+    color: #650928;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    background-color: #f8e5eb;
+    border-radius: 999px;
+}
+
+.venue-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rating {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.rating-value {
+    color: #333;
+    font-weight: 600;
+}
+
+.venue-location, .venue-price, .venue-contact {
+    color: #666;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 999px;
+}
+
+.venue-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.action-button.primary {
+    background-color: #650928;
+    color: white;
+}
+
+.action-button.primary:hover {
+    background-color: #4a061d;
+}
+
+.action-button.secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border-color: #ddd;
+}
+
+.action-button.secondary:hover {
+    background-color: #e9ecef;
+    border-color: #650928;
+}
+
+.active-promo-banner {
+    background-color: #650928;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.venue-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h2 {
+    margin: 0 0 1.5rem 0;
+    color: #333;
+    font-size: 1.25rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-item label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.info-item span {
+    font-weight: 500;
+    color: #333;
+}
+
+.star {
+    color: #ddd;
+    font-size: 1.25rem;
+}
+
+.star.filled {
+    color: #650928;
+}
+
+.venue-promos h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.75rem;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.promo-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+}
+
+.promo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.promo-code {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.promo-status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.promo-status.active {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.promo-status.inactive {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.promo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.venue-name {
+    color: #666;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.discount-percent {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #650928;
+}
+
+.promo-stats {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #eee;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .venue-detail-container {
+        padding: 1rem;
+    }
+
+    .venue-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .venue-title-section h1 {
+        font-size: 2rem;
+    }
+
+    .venue-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .venue-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .action-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .venue-detail-container {
+        padding: 0.75rem;
+    }
+
+    .venue-title-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .venue-meta > * {
+        width: 100%;
+    }
+
+    .promo-code {
+        font-size: 1rem;
+    }
+
+    .discount-percent {
+        font-size: 2rem;
+    }
+
+    .promo-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = __importDefault(require("express"));
+var verifyAccessToken_1 = require("../middlewares/verifyAccessToken");
+var group_validation_1 = require("../validation/group-validation");
+var group_controller_1 = require("../controllers/user/group-controller");
+var groupRoutes = express_1.default.Router();
+groupRoutes.use(verifyAccessToken_1.verifyAccessToken);
+groupRoutes.route('/all').get(group_controller_1.getAllUserGroups);
+groupRoutes.route("/new").post(group_validation_1.createGroupValidation, group_controller_1.createNewGroupWallet);
+groupRoutes.route("/single/:id").get(group_controller_1.getSingleGroupDetail);
+groupRoutes.route("/add").post(group_validation_1.addUserToGroupValidation, group_controller_1.addUserToGroup);
+groupRoutes.route("/join").post(group_validation_1.joinGroupWithLinkValidation, group_controller_1.joinGroupThroughLink);
+groupRoutes.route("/deposit").post(group_validation_1.depositIntoGroupValidation, group_controller_1.depositIntoGroup);
+groupRoutes.route("/withdraw").post(group_validation_1.withDrawFromGroupValidation, group_controller_1.withdrawFromGroup);
+groupRoutes.route("/withdraw-to-bank").post(group_validation_1.withDrawFromGroupToBankValidation, group_controller_1.withdrawFromGroupToExternalBank);
+exports.default = groupRoutes;

@@ -1,0 +1,189 @@
+{
+  "signupEntryHeader": "Sign Up",
+  "signupEntrySubHeading": "Enter your details below to create your account",
+  "signUpFirstName": "First Name",
+  "signUpFirstNamePlaceholder": "Enter first name",
+  "signUpLastName": "Last Name",
+  "signUpLastNamePlaceholder": "Enter last name",
+  "signUpPhoneNumber": "Phone Number",
+  "signUpPhoneNumberPlaceholder": "Enter number",
+  "signUpEmailAddress": "Email Address",
+  "signUpEmailAddressPlaceholder": "Enter email address",
+  "signUpSetPassword": "Set Password",
+  "signUpPasswordPlaceholder": "Minimum of 8 characters",
+  "signUpConfirmPassword": "Confirm Password",
+  "passwordAltText": "Passwords must contain at least eight characters, including at least 1 letter and 1 number.",
+  "confirmPasswordAltText": "Make sure your password match",
+  "signUpEntryButtonText": "Sign Up",
+  "OR": "OR",
+  "termsAndPrivacy": "I agree to the Terms & Privacy",
+  "googleSignUp": "Sign Up Using Google",
+  "microsoftSignUp": "Sign Up Using Microsoft",
+  "entryLevelExistingUser": "Already have an account?",
+  "entryLevelExistingUserCTA": "Sign In",
+
+  "emailAuthHeader": "Email Authentication (OTP)",
+  "emailAuthFirstSubHeader": "We've sent an OTP code to your registered email",
+  "emailAuthSecondSubHeader": "enter code below.",
+  "submit": "Submit",
+  "resend": "Resend",
+  "back": "Back",
+
+  "loginEntryHeader": "Welcome Back!!",
+  "loginEntrySubHeading": "Please enter your email & password to access the application",
+  "loginEmail": "Email Address",
+  "loginEmailPlaceholder": "Email address",
+  "loginPassword": "Password",
+  "loginPasswordPlaceholder": "Enter password",
+  "googleLogin": "Login Using Google",
+  "microsoftLogin": "Login Using Microsoft",
+  "entryLevelNewUser": "Don't have an account?",
+  "entryLevelNewUserCTA": "Sign Up",
+  "loginEntryButtonText": "Login",
+  "forgotPassword": "Forgot Password?",
+
+  "forgotPasswordHeader": "Forget Password",
+  "forgotPasswordSubHeader": "Enter your registered email to be able to recover your password",
+  "forgotPasswordEmail": "Email Address",
+  "forgotPasswordEmailPlaceholder": "Email address",
+
+  "otpAuthHeader": "OTP Authentication",
+  "otpAuthFirstSubHeader": "We've sent OTP code to your registered email",
+  "otpAuthSecondSubHeader": "to verify it is you",
+
+  "createPasswordHeader": "Create Password",
+  "createPasswordSubHeader": "Create a new password for your account",
+  "createPasswordPassword": "Password",
+  "createPasswordPasswordPlaceholder": "Enter Password",
+  "createPasswordConfirmPassword": "Confirm Password",
+  "createPasswordConfirmPasswordPlaceholder": "Enter Password",
+
+  "passwordUpdatedHeader": "Password Updated",
+  "passwordUpdatedSubHeader": "The password to your account has been updated successfully",
+  "passwordUpdatedButtonText": "Go to Login",
+
+  "companyDetailsHeader": "Set up your Organization Details",
+  "companyDetailsSubHeader": "Please provide your company information accurately",
+  "companyDetailsOrganizationName": "Organization Name",
+  "companyDetailsOrganizationNamePlaceholder": "Enter name",
+  "companyDetailsCompanyType": "Company Type",
+  "companyDetailsCompanyTypeOption": [
+    { "label": "Startup", "value": "Startup" },
+    {
+      "label": "Small and Medium-Sized Enterprise (SME)",
+      "value": "Small and Medium-Sized Enterprise (SME)"
+    },
+    { "label": "Enterprise", "value": "Enterprise" },
+    {
+      "label": "Multinational Corporation",
+      "value": "Multinational Corporation"
+    },
+    {
+      "label": "Non-Governmental Organization (NGO)",
+      "value": "Non-Governmental Organization (NGO)"
+    },
+    { "label": "Private Company", "value": "Private Company" }
+  ],
+  "startup": "Startup",
+  "companyDetailsCompanyEmail": "Company Email Address",
+  "companyDetailsCompanyEmailPlaceholder": "Enter email address",
+  "companyDetailsCountry": "Country",
+  "companyDetailsFeaturesHeader": "What feature are you looking to use ? (Optional)",
+  "companyDetailsFeatures": [
+    "Shift Management",
+    "Time Management",
+    "Attendant Management",
+    "Payroll"
+  ],
+  "companyDetailsButtonText": "Continue",
+
+  "legalDetailsHeader": "Create your company",
+  "legalDetailsSubHeader": "Please provide your company information accurately",
+  "legalDetailsCautionHeader": "Do you have an entity under your organization?",
+  "legalDetailsCautionSubHeader": "In the context of an organization, an entity refers to a company that has been formed to conduct business under the umbrella of an registered organization.",
+  "legalDetailsCautionSupportingText": "You can skip if you do not have an entity under your orgazisation and you also have the opportunity to create it later under your account",
+  "legalDetailsText": "Legal Details",
+  "legalDetailsOrganizationName": "Legal Company Name",
+  "legalDetailsOrganizationNamePlaceholder": "Enter name",
+  "legalDetailsCompanyType": "Company Type",
+  "legalDetailsCompanyTypeOption": [
+    {
+      "label": "Branch of a foreign company",
+      "value": "Branch of a foreign company"
+    },
+    {
+      "label": "Company limited by guarantee",
+      "value": "Company limited by guarantee"
+    },
+    { "label": "Incorporation", "value": "Incorporation" },
+    { "label": "General Partnership", "value": "General Partnership" },
+    {
+      "label": "Joint stock companies",
+      "value": "Joint stock companies"
+    },
+    {
+      "label": "Limited liability company (LLC)",
+      "value": "Limited liability company (LLC)"
+    },
+    {
+      "label": "Limited liability partnership",
+      "value": "Limited liability partnership"
+    },
+    { "label": "Limited partnership", "value": "Limited partnership" },
+    {
+      "label": "Private company limited by shares",
+      "value": "Private company limited by shares"
+    },
+    {
+      "label": "Private liability company",
+      "value": "Private liability company"
+    },
+    {
+      "label": "Public company limited by shares",
+      "value": "Public company limited by shares"
+    },
+    {
+      "label": "Public liability company",
+      "value": "Public liability company"
+    },
+    {
+      "label": "Sole proprietors / sole trader",
+      "value": "Sole proprietors / sole trader"
+    }
+  ],
+  "legalDetailsCountryOfIncorporation": "Country of Incorporation",
+  "legalDetailsPhoneNumber": "Phone Number",
+  "legalDetailsPhoneNumberPlaceholder": "Enter number",
+  "legalDetailsIndustry": "Industry",
+  "legalDetailsCACNumber": "CAC registration number (Optional)",
+  "legalDetailsCACNumberPlaceholder": "0000",
+  "legalDetailsTaxId": "TAX ID (Optional)",
+  "legalDetailsTaxIdPlaceholder": "Enter ID",
+  "legalDetailsSkipText": "Skip",
+  "legalDetailsButtonText": "Next",
+  "legalDetailsHeaderText1": "Legal Details",
+  "legalDetailsHeaderText2": "Entity Address",
+
+  "entityAddressAnotherEntity": "Create another entity",
+  "entityAddressButtonText": "Submit",
+  "entityAddressHeader": "Create your company entity",
+  "entityAddressSubHeader": "Please provide your company information accurately",
+  "entityAddressText": "Entity Address",
+  "entityAddressEmail": "Email",
+  "entityAddressEmailPlaceholder": "Enter email address",
+  "entityAddressAddress": "Entity Registered Address",
+  "entityAddressAddressPlaceholder": "Enter address",
+  "entityAddressZipCodes": "Zip Code",
+  "entityAddressZipCodesPlaceholder": "Enter code",
+  "entityAddressLinkedIn": "Company LinkedIn URL",
+  "entityAddressWebsiteUrl": "Company Website URL",
+  "entityAddressCountry": "Country",
+  "entityAddressState": "State",
+
+  "accountConfirmationHeader": "Confirming your account, please wait.. ",
+  "accountConfirmationSubHeader": "Your ability to manage people in an organization is top notch. ",
+
+  "accountCreatedHeader": "Account Created ",
+  "accountCreatedSubHeader": "Your account has been created successfully, go to your dashboard to create magic",
+  "accountCreatedButtonText": "Go to Dashboard"
+}

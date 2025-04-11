@@ -1,0 +1,26 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = __importDefault(require("express"));
+var admin_validation_1 = require("../validation/admin-validation");
+var admin_controller_1 = require("../controllers/admin/admin-controller");
+var discount_vlidation_1 = require("../validation/discount-vlidation");
+var admin_controller_2 = require("../controllers/admin/admin-controller");
+var discount_controller_1 = require("../controllers/discounts/discount-controller");
+var venue_controller_1 = require("../controllers/venue/venue-controller");
+var adminRoutes = express_1.default.Router();
+adminRoutes.route("/category").post(admin_validation_1.addCategoryValidation, admin_controller_1.addNewCategory);
+adminRoutes.route("/category").get(admin_controller_1.getAllCategory);
+adminRoutes.route("/location").post(admin_validation_1.addLocationValidation, admin_controller_1.addNewLocation);
+adminRoutes.route("/location").get(admin_controller_1.getAllLocation);
+adminRoutes.route("/venue").post(admin_validation_1.addVenueValidation, admin_controller_1.addNewVenue);
+adminRoutes.route("/venue").get(admin_controller_1.getAllVenueData);
+adminRoutes.route("/venue/edit").put(admin_validation_1.editVenueValidation, admin_controller_1.updateVenue);
+adminRoutes.route("/venue/delete").delete(admin_validation_1.deleteVenueValidation, admin_controller_1.deleteVenue);
+adminRoutes.route("/promo-code").post(admin_validation_1.addPromoCodeValidation, admin_controller_1.addPromoCodes);
+adminRoutes.route("/discount").post(discount_vlidation_1.addDiscountValidation, admin_controller_2.addNewDiscount);
+adminRoutes.route("/discount").get(discount_controller_1.getAllDiscounts);
+adminRoutes.route("/venue/:id").get(venue_controller_1.getVenueDetail);
+exports.default = adminRoutes;

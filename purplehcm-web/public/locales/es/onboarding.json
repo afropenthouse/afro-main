@@ -1,0 +1,189 @@
+{
+  "signupEntryHeader": "Regístrate",
+  "signupEntrySubHeading": "REGÍSTRATE aquí, ingresa tus datos para crear una cuenta.",
+  "signUpFirstName": "Nombre",
+  "signUpFirstNamePlaceholder": "Ingresa el nombre",
+  "signUpLastName": "Apellido",
+  "signUpLastNamePlaceholder": "Ingresa el apellido",
+  "signUpPhoneNumber": "Número de Teléfono",
+  "signUpPhoneNumberPlaceholder": "Ingresa el número",
+  "signUpEmailAddress": "Correo Electrónico",
+  "signUpEmailAddressPlaceholder": "Ingresa la dirección de correo",
+  "signUpSetPassword": "Establecer Contraseña",
+  "signUpPasswordPlaceholder": "Mínimo de 8 caracteres",
+  "signUpConfirmPassword": "Confirmar Contraseña",
+  "passwordAltText": "Las contraseñas deben contener al menos ocho caracteres, incluyendo al menos 1 letra y 1 número.",
+  "confirmPasswordAltText": "Asegúrate de que las contraseñas coincidan",
+  "signUpEntryButtonText": "Regístrate",
+  "OR": "O",
+  "termsAndPrivacy": "Estoy de acuerdo con los Términos y Privacidad",
+  "googleSignUp": "Regístrate usando Google",
+  "microsoftSignUp": "Regístrate usando Microsoft",
+  "entryLevelExistingUser": "¿Ya tienes una cuenta?",
+  "entryLevelExistingUserCTA": "Iniciar Sesión",
+
+  "emailAuthHeader": "Autenticación por Correo Electrónico (OTP)",
+  "emailAuthFirstSubHeader": "Hemos enviado un código OTP a tu correo electrónico registrado",
+  "emailAuthSecondSubHeader": "ingresa el código a continuación.",
+  "submit": "Enviar",
+  "resend": "Reenviar",
+  "back": "Atrás",
+
+  "loginEntryHeader": "¡Bienvenido de nuevo!",
+  "loginEntrySubHeading": "Por favor ingresa tu correo y contraseña para acceder a la aplicación",
+  "loginEmail": "Correo Electrónico",
+  "loginEmailPlaceholder": "Dirección de correo electrónico",
+  "loginPassword": "Contraseña",
+  "loginPasswordPlaceholder": "Ingresa la contraseña",
+  "googleLogin": "Inicia sesión con Google",
+  "microsoftLogin": "Inicia sesión con Microsoft",
+  "entryLevelNewUser": "¿No tienes una cuenta?",
+  "entryLevelNewUserCTA": "Regístrate",
+  "loginEntryButtonText": "Iniciar Sesión",
+  "forgotPassword": "¿Olvidaste la contraseña?",
+
+  "forgotPasswordHeader": "Recuperar Contraseña",
+  "forgotPasswordSubHeader": "Ingresa tu correo electrónico registrado para poder recuperar tu contraseña",
+  "forgotPasswordEmail": "Correo Electrónico",
+  "forgotPasswordEmailPlaceholder": "Dirección de correo electrónico",
+
+  "otpAuthHeader": "Autenticación OTP",
+  "otpAuthFirstSubHeader": "Hemos enviado un código OTP a tu correo electrónico registrado",
+  "otpAuthSecondSubHeader": "para verificar que eres tú",
+
+  "createPasswordHeader": "Crear Contraseña",
+  "createPasswordSubHeader": "Crea una nueva contraseña para tu cuenta",
+  "createPasswordPassword": "Contraseña",
+  "createPasswordPasswordPlaceholder": "Ingresa la contraseña",
+  "createPasswordConfirmPassword": "Confirmar Contraseña",
+  "createPasswordConfirmPasswordPlaceholder": "Ingresa la contraseña",
+
+  "passwordUpdatedHeader": "Contraseña Actualizada",
+  "passwordUpdatedSubHeader": "La contraseña de tu cuenta ha sido actualizada exitosamente",
+  "passwordUpdatedButtonText": "Ir a Iniciar Sesión",
+
+  "companyDetailsHeader": "Configura los Detalles de tu Organización",
+  "companyDetailsSubHeader": "Por favor proporciona la información de tu empresa de manera precisa",
+  "companyDetailsOrganizationName": "Nombre de la Organización",
+  "companyDetailsOrganizationNamePlaceholder": "Ingresa el nombre",
+  "companyDetailsCompanyType": "Tipo de Empresa",
+  "companyDetailsCompanyTypeOption": [
+    { "label": "Startup", "value": "Startup" },
+    {
+      "label": "Pequeña y Mediana Empresa (PyME)",
+      "value": "Pequeña y Mediana Empresa (PyME)"
+    },
+    { "label": "Empresa", "value": "Empresa" },
+    {
+      "label": "Corporación Multinacional",
+      "value": "Corporación Multinacional"
+    },
+    {
+      "label": "Organización No Gubernamental (ONG)",
+      "value": "Organización No Gubernamental (ONG)"
+    },
+    { "label": "Empresa Privada", "value": "Empresa Privada" }
+  ],
+  "startup": "Startup",
+  "companyDetailsCompanyEmail": "Empresa la dirección de correo electrónico",
+  "companyDetailsCompanyEmailPlaceholder": "Ingresa la dirección de correo electrónico",
+  "companyDetailsCountry": "País",
+  "companyDetailsFeaturesHeader": "¿Qué función estás buscando utilizar? (Opcional)",
+  "companyDetailsFeatures": [
+    "Gestión de Turnos",
+    "Gestión del Tiempo",
+    "Gestión de Asistentes",
+    "Nómina"
+  ],
+  "companyDetailsButtonText": "Continuar",
+
+  "legalDetailsHeader": "Crea tu Empresa",
+  "legalDetailsSubHeader": "Por favor proporciona la información de tu empresa de manera precisa",
+  "legalDetailsCautionHeader": "¿Tienes una entidad bajo tu organización?",
+  "legalDetailsCautionSubHeader": "En el contexto de una organización, una entidad se refiere a una empresa que se ha formado para realizar negocios bajo el paraguas de una organización registrada.",
+  "legalDetailsCautionSupportingText": "Puedes omitir si no tienes una entidad bajo tu organización y también tienes la oportunidad de crearla más adelante en tu cuenta.",
+  "legalDetailsText": "Detalles Legales",
+  "legalDetailsOrganizationName": "Nombre Legal de la Empresa",
+  "legalDetailsOrganizationNamePlaceholder": "Ingresa el nombre",
+  "legalDetailsCompanyType": "Tipo de Empresa",
+  "legalDetailsCompanyTypeOption": [
+    {
+      "label": "Sucursal de una empresa extranjera",
+      "value": "Sucursal de una empresa extranjera"
+    },
+    {
+      "label": "Empresa limitada por garantía",
+      "value": "Empresa limitada por garantía"
+    },
+    { "label": "Incorporación", "value": "Incorporación" },
+    { "label": "Sociedad General", "value": "Sociedad General" },
+    {
+      "label": "Sociedades por acciones",
+      "value": "Sociedades por acciones"
+    },
+    {
+      "label": "Sociedad de responsabilidad limitada (LLC)",
+      "value": "Sociedad de responsabilidad limitada (LLC)"
+    },
+    {
+      "label": "Sociedad de responsabilidad limitada",
+      "value": "Sociedad de responsabilidad limitada"
+    },
+    { "label": "Sociedad limitada", "value": "Sociedad limitada" },
+    {
+      "label": "Empresa privada limitada por acciones",
+      "value": "Empresa privada limitada por acciones"
+    },
+    {
+      "label": "Empresa privada de responsabilidad limitada",
+      "value": "Empresa privada de responsabilidad limitada"
+    },
+    {
+      "label": "Empresa pública limitada por acciones",
+      "value": "Empresa pública limitada por acciones"
+    },
+    {
+      "label": "Empresa pública de responsabilidad limitada",
+      "value": "Empresa pública de responsabilidad limitada"
+    },
+    {
+      "label": "Propietarios únicos / comerciante único",
+      "value": "Propietarios únicos / comerciante único"
+    }
+  ],
+  "legalDetailsCountryOfIncorporation": "País de Incorporación",
+  "legalDetailsPhoneNumber": "Número de Teléfono",
+  "legalDetailsPhoneNumberPlaceholder": "Ingresa el número",
+  "legalDetailsIndustry": "Industria",
+  "legalDetailsCACNumber": "Número de registro de CAC (Opcional)",
+  "legalDetailsCACNumberPlaceholder": "0000",
+  "legalDetailsTaxId": "ID de Impuesto (Opcional)",
+  "legalDetailsTaxIdPlaceholder": "Ingresa el ID",
+  "legalDetailsSkipText": "Omitir",
+  "legalDetailsButtonText": "Siguiente",
+  "legalDetailsHeaderText1": "Detalles Legales",
+  "legalDetailsHeaderText2": "Dirección de la Entidad",
+
+  "entityAddressAnotherEntity": "Crear otra entidad",
+  "entityAddressButtonText": "Enviar",
+  "entityAddressHeader": "Crea la entidad de tu empresa",
+  "entityAddressSubHeader": "Por favor proporciona la información de tu empresa de manera precisa",
+  "entityAddressText": "Dirección de la Entidad",
+  "entityAddressEmail": "Correo Electrónico",
+  "entityAddressEmailPlaceholder": "Ingresa la dirección de correo electrónico",
+  "entityAddressAddress": "Dirección Registrada de la Entidad",
+  "entityAddressAddressPlaceholder": "Ingresa la dirección",
+  "entityAddressZipCodes": "Código Postal",
+  "entityAddressZipCodesPlaceholder": "Ingresa el código",
+  "entityAddressLinkedIn": "URL de LinkedIn de la Empresa",
+  "entityAddressWebsiteUrl": "URL del Sitio Web de la Empresa",
+  "entityAddressCountry": "País",
+  "entityAddressState": "Estado",
+
+  "accountConfirmationHeader": "Confirmando tu cuenta, por favor espera.. ",
+  "accountConfirmationSubHeader": "Tu capacidad para gestionar personas en una organización es de primera categoría.",
+
+  "accountCreatedHeader": "Cuenta Creada",
+  "accountCreatedSubHeader": "Tu cuenta ha sido creada exitosamente, ve a tu panel para crear magia",
+  "accountCreatedButtonText": "Ir al Panel"
+}

@@ -1,0 +1,36 @@
+/* Main container styling */
+.slider-container {
+   width: 100vw;
+    margin: 0 auto;
+    @media only screen and (min-width: 500px) {
+      margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  }
+  
+  /* Styling for the individual image containers */
+  .slider-image-wrapper {
+    animation: scroll 30s linear infinite;
+  }
+  
+  
+  /* Add hover effect on the images */
+  .slider-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .sliderImage {
+    @media only screen and (max-width: 500px) {
+    padding: 0 .5rem;
+   }
+  }
+  

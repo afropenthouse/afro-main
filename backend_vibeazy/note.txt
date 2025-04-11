@@ -1,0 +1,67 @@
+username: olalekan
+password: 09090102835
+email: hiheykelvin@gmail.com
+phoneNumber: 08174538389
+
+
+
+{
+  "success": true,
+  "code": 200,
+  "message": "Operation Successful",
+  "data": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Mjk3Y2FhZS03Y2Y0LTQyMmEtYjFiZi02YzA4YTYxMmQ2YTIiLCJlbWFpbCI6IjUyOTdjYWFlLTdjZjQtNDIyYS1iMWJmLTZjMDhhNjEyZDZhMiIsImlhdCI6MTczMzc0NTU4MCwiZXhwIjoxNzM0MzUwMzgwfQ.JByd8JI194HmMCB3Qp6zs8_WkE9Xp8CN14onnjEcCbI",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Mjk3Y2FhZS03Y2Y0LTQyMmEtYjFiZi02YzA4YTYxMmQ2YTIiLCJpYXQiOjE3MzM3NDU1ODAsImV4cCI6MTczNjMzNzU4MH0.mMq0yI4g94Z7XvbNxFyOWX8z4n6ATjtVPiuSN52z3ec",
+    "user": {
+      "userId": "5297caae-7cf4-422a-b1bf-6c08a612d6a2",
+      "email": "hiheykelvin@gmail.com",
+      "username": "olalekan",
+      "firstName": null,
+      "lastName": null,
+      "phoneNumber": null,
+      "profileImage": null
+    }
+  }
+}
+
+
+"prisma": {
+    "schema": "src/prisma/schema.prisma"
+  }
+   && tsc
+
+
+   https://backend-vibeazy.fly.dev/wallet/banks/cashwyre/
+
+
+   https://backend-vibeazy.fly.dev/wallet/verify/cashwyreaAccount
+
+
+
+   https://backend-vibeazy.fly.dev/wallet/withdrawThroughCashwyre
+
+
+   https://backend-vibeazy.fly.dev/discounts/all
+
+
+
+
+   types of transactions
+
+   
+   send to vibeazy user
+   send to external banks
+   send to external bank from group wallet
+
+
+
+I started the year with a few goals in mind and amongst them was taking steps to take my career to the next level. 
+The year had its challenges, but I was determined to stay committed and put in the effort. With that in mind I started a Virtual Administrative Assistant course in Alx_Africa few months ago with an aim in mind and I've officially graduated as a certified Virtual Administrative Assistant. It has been an incredible, changeling and intense road getting here, I've gained a whole new set of skills that I can't wait to put to use. I’ve gotten really good at managing calendars, learned how to handle even the busiest schedules, and discovered the power of staying organized, along with picking up other valuable skills. Beyond the tools and techniques, I’ve developed a strong work ethic, the ability to meet tight deadlines, and a deep commitment to client satisfaction. I look forward to partnering with clients who are looking for a reliable and dedicated virtual assistant to optimise their workload and boost their productivity. Let's connect if you're ready to take your business to the next level! #virtualassistant #newcareer #productivity #organization #timemanagement
+
+
+I’m a geoscience student and a virtual...
+I’m driven by a passion for productivity and excellence. I thrive in team environments where accountability, timeliness, and balance are key. As a goal-oriented individual, I excel at setting clear objectives tied to deadlines and pursuing them with persistence and focus.
+
+I bring value to any team by proactively gathering and organizing information, ensuring tasks are completed efficiently without being a burden. A strong networker and long-term thinker, I contribute to creating cohesive, high-performing groups.
+
+Currently, I’m honing my skills as a virtual assistant and actively seeking roles in this space. My focus is on expanding my expertise to deliver exceptional support and value in virtual assistant capacities.

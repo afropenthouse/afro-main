@@ -1,0 +1,62 @@
+.aboutSlider {
+    background: url('../../../public//images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+        
+        color: #FFFFFF;
+        margin-left: 5rem;
+    }
+
+    .right {
+        color: #0C0C0C;
+        margin-right: 5rem;
+    }
+
+    .icon {
+        background-color: #D31C1A;
+        padding: 5px 10px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .box1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+    }
+    .box2 {
+        position: absolute;
+        top: 1.9rem;
+        left: 1.9rem;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+    }
+    .box3 {
+        position: absolute;
+        right: 1.9em;
+        bottom: 1.9rem;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+    }
+    .box4 {
+        position: absolute;
+        right: 0rem;
+        bottom: 0rem;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+    }
+}

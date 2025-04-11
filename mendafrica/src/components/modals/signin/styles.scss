@@ -1,0 +1,304 @@
+.signin-modal,
+.signin-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+
+    .modal-content {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+        min-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 2rem 0;
+        gap: 1rem;
+        border-radius: .7rem;
+        @media only screen and (max-width: 500px) {
+            top: 50%;
+            min-width: 300px;
+            max-width: 96vw;
+         }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+            @media only screen and (max-width: 500px) {
+                padding: 0 1rem;
+            }
+
+            .google {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                border: 1px solid #D0D5DD;
+                width: 25rem;
+                padding: .5rem 0;
+                margin: 0 auto;
+                gap: 10px;
+                border-radius: 6px;
+                margin-bottom: .8rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                
+                &:active {
+                    transform: scale(0.98);
+                    background-color: #f5f5f5;
+                }
+                
+                &:hover {
+                    background-color: #fafafa;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                }
+                
+                @media only screen and (max-width: 500px) {
+                    width: 90vw;
+                }
+
+                h3 {
+                    color: #344054;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 23.2px;
+                    text-align: center;
+
+                }
+            }
+
+            .or {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #667185;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20.3px;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50;
+                    left: 7%;
+                    width: 10rem;
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    @media only screen and (max-width: 500px) {
+                       left: 2%;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50;
+                    right: 7%;
+                    width: 10rem;
+                    height: 1px;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    @media only screen and (max-width: 500px) {
+                        right: 2%;
+                     }
+                }
+            }
+
+            h1 {
+                color: #1B1818;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28.8px;
+                letter-spacing: -0.02em;
+                text-align: center;
+
+            }
+
+            p {
+                color: #000000;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.05em;
+                text-align: center;
+                margin-bottom: 1.5rem;
+
+            }
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            gap: .3rem;
+
+            h3 {
+                color: #101928;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20.3px;
+                text-align: left;
+            }
+            h2 {
+                @media only screen and (max-width: 500px) {
+                    margin-left: 1rem;
+                 }
+            }
+            flex-direction: column;
+
+
+            .others {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .formHolder {
+                    .input {
+                        width: 25rem;
+                        padding: .7rem 1rem;
+                        gap: 0px;
+                        border-radius: 10px;
+                        background-color: #EDEDEE;
+                        @media only screen and (max-width: 500px) {
+                            width: 90vw;
+                            margin: 0 auto;
+
+                         }
+
+                        input {
+                            outline: none;
+                            background-color: #EDEDEE;
+                            width: 100%;
+
+                        }
+                    }
+                }
+
+                .password {
+                    .input {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        width: 25rem;
+                        height: 3rem; /* Set a fixed height */
+                        padding: 0.5rem 1rem;
+                        gap: 0px;
+                        border-radius: 10px;
+                        background-color: #EBCC48;
+                        outline: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 27px;
+                        letter-spacing: -0.05em;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    @media only screen and (max-width: 500px) {
+                        button {
+                            width: 90vw;
+                            margin: 0 auto;
+                        }
+                    }
+                    
+
+                    p {
+                        justify-self: center;
+                        align-self: center;
+                        margin-top: .7rem;
+                    }
+
+                    span {
+                        color: #EBCC48;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0.05em;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: 0.5rem;
+            
+            span {
+                color: #007bff;
+                font-size: 0.875rem;
+                cursor: pointer;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: darken(#007bff, 10%);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.signin-overlay {
+    background: rgba(252, 252, 252, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(8px);
+    @media only screen and (max-width: 500px) {
+        background: rgba(252, 252, 252, 0.7);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+    }
+}
+
+
+.signin-modal{
+    z-index: 1000;
+}
+
+.formHolder.password {
+  .input {
+    position: relative;
+    
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: #666;
+      
+      &:hover {
+        color: #333;
+      }
+      
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

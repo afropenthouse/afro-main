@@ -1,0 +1,137 @@
+.header {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  background: transparent;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.header-bg {
+  background-color: #FEFEFE;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: auto;
+  height: 100%;
+  padding-left: 3rem;
+  /* margin-left: 1rem;
+  margin-right: 2rem; */
+}
+
+/* .header .nav-menu a {
+  color: red;
+} */
+
+/* .header .navbar img {
+    width: 250px;
+    height: auto;
+} */
+
+.header .nav-menu {
+  display: flex;
+}
+
+.header .nav-item {
+  padding: 1.5rem;
+  font-weight: 500;
+}
+
+.header .nav-item a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .header {
+    max-width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+  }
+
+  .header .navbar {
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    @media only screen and (max-width: 500px) {
+      padding-right: 1rem;
+      padding-top: 1rem;
+  }
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1.5rem 0;
+  }
+
+  .header .navbar img {
+    /* width: 150px; */
+  }
+}
+
+/* .started {
+    margin-left: 4rem;
+} */
+/* oriinal
+.started {
+    margin-left: 4rem;
+} */
+
+.started a{
+    background-color: #650928;
+    padding: 12px;
+    padding-top: 8px;
+    border-radius: 100px;
+    margin: 0 auto;
+    color: #FEFEFE;
+}
+
+.color {
+    color: #FEFEFE;
+}
+
+.logo {
+  padding-top: 1rem;
+  @media only screen and (max-width: 500px) {
+    /* margin-right: 1rem; */
+    align-self: center;
+    padding-top: 1.2rem;
+    padding-right: 2rem;
+    margin-right: 5rem;
+}
+}
+
+.header .navbar {
+  @media only screen and (max-width: 500px) {
+    padding-left: 1rem;
+}
+}

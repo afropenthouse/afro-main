@@ -1,0 +1,5 @@
+add categories done
+add locations done
+add new discounts done
+add venues
+

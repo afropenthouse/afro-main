@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Vibeazy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff5f7;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(101, 9, 40, 0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .header {
+            text-align: center;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            text-align: center;
+            color: #4a4a4a;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .features {
+            background-color: #fef2f4;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .feature-item {
+            margin-bottom: 16px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .feature-icon {
+            background-color: #650928;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .otp {
+            background-color: #650928;
+            border-radius: 12px;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: #ffffff;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            color: #718096;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #fbd5dd;
+        }
+        .accent-text {
+            color: #650928;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .otp {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="header">
+            <h1>Welcome to <span class="accent-text">Vibeazy</span>!</h1>
+        </div>
+        <div class="content">
+            <p>Thank you for joining Vibeazy! We're excited to help you discover amazing places to create memorable moments with your friends and family.</p>
+           
+            <p>To start exploring, please verify your email address using this verification code: </p>
+            <div class="otp">{{body}}</div>
+            <p>This code will expire in 10 minutes. If you didn't request this verification, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            <p>Need help? Our support team is always here for you</p>
+            <p>&copy; 2025 Vibeazy. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

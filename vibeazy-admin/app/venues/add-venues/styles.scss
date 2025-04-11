@@ -1,0 +1,173 @@
+.add-venue-container {
+  max-width: 900px; /* Reduced width for a more balanced layout */
+  margin: 2rem auto;
+  padding: 1rem 2rem; /* Added padding for better spacing */
+  box-sizing: border-box;
+}
+
+.venue-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+}
+
+.venue-form h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-section {
+  margin-bottom: 1.5rem; /* Reduced spacing for compactness */
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.form-section h2 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #650928;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+.form-group {
+  margin-bottom: 1rem; /* Reduced spacing for a cleaner layout */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #650928;
+  font-weight: 600; /* Slightly increased font weight */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px; /* Slightly larger radius for a softer look */
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 4px 1px rgba(77, 171, 247, 0.3);
+}
+
+.image-upload-container {
+  margin: 1rem 0;
+}
+
+.image-upload-label {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ced4da;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-upload-label:hover {
+  border-color: #4dabf7;
+  background-color: rgba(77, 171, 247, 0.05);
+}
+
+.upload-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+}
+
+.upload-icon {
+  font-size: 2.5rem; /* Slightly larger icon size */
+  margin-bottom: 0.5rem;
+}
+
+.image-preview { 
+  width: 300px;;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-input {
+  display: none;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.9rem; /* Adjusted padding */
+  background-color: #650928;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: white;
+  color: #650928;
+  border: 2px solid #650928;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .venue-form {
+    padding: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-section {
+    padding: 1rem;
+  }
+
+  .venue-form h1 {
+    font-size: 1.6rem;
+  }
+
+  .form-section h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-venue-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .image-upload-label {
+    height: 150px;
+  }
+
+  .form-group input {
+    padding: 0.6rem;
+  }
+
+  .submit-button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}

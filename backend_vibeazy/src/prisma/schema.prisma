@@ -1,0 +1,228 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["omitApi"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+//keeps track all user related fields
+model User {
+  id                  String            @id @unique() @default(uuid())
+  email               String            @unique()
+  username            String?           @unique()
+  firstName           String?
+  lastName            String?
+  phoneNumber         String?
+  password            String?   
+  isMailVerified      Boolean            @default(false)
+  hasCompletedProfile Boolean           @default(false) 
+  pin                 String?
+  hasCreatedPin       Boolean           @default(false)        
+  createdAt           DateTime          @default(now())
+  profileImage        String?
+  updatedAt           DateTime          @updatedAt
+  verifications       VerificationOTP[]
+  notifications       Notifications[]
+  wallet           UserWallet? 
+  session            Session[]
+  transaction        Transactions[]
+  adminGroups        CollectiveWallet[]
+  referrals           User[] @relation("UserToUser")
+  referredBy          User?    @relation("UserToUser", fields: [referredById], references: [id])
+  referredById String?
+  individualWallets  IndividualWallet[]
+}
+
+//keeps track of user active sessions
+//Todo Cron jobs to delete expired session
+model Session {
+  id          String           @id @unique() @default(uuid())
+  user        User             @relation(fields: [userId], references: [id])
+  userId      String
+  accessToken       String
+  refreshToken      String
+  deviceFingerPrint String
+  expiredAt   DateTime
+  createdAt   DateTime         @default(now())
+}
+
+//keeps track of all OTP's in the application
+model VerificationOTP {
+  id          String           @id @unique() @default(uuid())
+  user        User             @relation(fields: [userId], references: [id])
+  userId      String
+  createdAt   DateTime         @default(now())
+  expiredTime DateTime
+  otpCode     String
+  type        VERIFICATION_TYPE
+}
+
+//keeps track of user notifications
+model Notifications {
+  id          String           @id @unique() @default(uuid())
+  user        User             @relation(fields: [userId], references: [id])
+  userId      String
+  type        NOTIFICATION_TYPE @default(OFFERS)
+  createdAt   DateTime         @default(now())
+  content     String
+
+}
+
+model Web {
+  id          String           @id @unique() @default(uuid())
+  email      String?
+}
+
+//keeps track of user wallet
+model UserWallet {
+  id       String   @id @unique() @default(uuid())
+  user     User?      @relation(fields: [userId], references: [id])
+  userId   String    @unique()
+  balance  Float     @default(0.0)
+  virtualAccountNumber String?
+  virtualAccountBankName String?
+  virtualAccountCreatedAt DateTime?
+  walletRef String 
+  referralBalance Float @default(0.0)
+  lastWithdrawalAt DateTime?
+  lastDepositedAt  DateTime?
+}
+
+//keeps track of all transactions in the application
+model Transactions {
+    id       String   @id @unique() @default(uuid())
+    user     User      @relation(fields: [userId], references: [id])
+    userId   String   
+    txRef    String  
+    name     String
+    status TRANSACTION_STATUS @default(SUCCESS)
+    type TRANSACTION_TYPE
+    productDescription TRANSACTION_DESCRIPTION
+    amount Float
+    createdAt     DateTime        @default(now())
+    updatedAt     DateTime          @updatedAt
+    featureId     String    
+    collectiveWallet    CollectiveWallet?    @relation(fields: [collectiveWalletId], references: [id])
+  collectiveWalletId  String?       //would be used in webhooks
+}
+
+model Location {
+    id  String   @id @unique() @default(uuid())
+    city   String
+    venues Venues[]
+}
+
+model Category {
+  id  String   @id @unique() @default(uuid())
+  category  String 
+  venues Venues []
+}
+
+model Venues{
+    id       String   @id @unique() @default(uuid())
+    category  Category @relation(fields: [categoryId], references: [id])
+    categoryId  String
+    venueName String
+    startAmount Float
+    endAmount Float
+    accountNumber String?
+    bankName  String?
+    rating   Float?
+    callLine  String?
+    webLink String?
+    discount Float  @default(0)
+    longitude String?
+    venueImages String[]
+    latitude   String?
+    location     Location   @relation(fields: [locationId], references: [id])
+    locationId   String   
+    promoCode PromoCodes[]
+}
+
+model PromoCodes {
+  id       String   @id @unique() @default(uuid())
+  discountPercent Float 
+  code String
+  isActive   Boolean @default(false)
+  useTimes  Int @default(0)
+  createdAt     DateTime        @default(now())
+  venue      Venues @relation(fields: [venueId], references: [id])
+  venueId     String
+}
+model Discount {
+    id  String   @id @unique() @default(uuid())
+    title   String
+    image String
+    url String
+}
+//manages group wallet
+model CollectiveWallet{
+    id       String   @id @unique() @default(uuid())
+    admin     User      @relation(fields: [adminId], references: [id])
+    adminId   String   
+    name     String
+    groupBalance  Int   @default(0)
+    sharableLink  String
+    groupLogo   String?
+    individuals IndividualWallet[]
+    lastDepositedAt DateTime?
+    lastWithdrawalAt DateTime?
+    transactions       Transactions[]
+}
+
+//manages indivudial wallet within the group wallet
+model IndividualWallet{
+  id       String   @id @unique() @default(uuid())
+  user     User      @relation(fields: [userId], references: [id])
+  userId   String   
+  contributedAmount Int @default(0)
+  joinedAt   DateTime               @default(now())
+  collection     CollectiveWallet      @relation(fields: [collectionId], references: [id])
+  collectionId   String   
+}
+
+
+model ErrorLogs{
+    id                  String                 @id @unique() @default(uuid())
+    txRef String
+    logs String
+    createdAt             DateTime               @default(now())
+}
+
+enum VERIFICATION_TYPE {
+  MAIL_VERIFICATION
+  RESET_PASSWORD
+}
+
+enum NOTIFICATION_TYPE {
+  OFFERS
+  WALLET
+  COLLECTION_GROUP
+}
+
+enum TRANSACTION_TYPE {
+  CREDIT
+  DEBIT
+  NEUTRAL
+  REFUND
+}
+
+enum TRANSACTION_STATUS {
+  SUCCESS
+  PENDING
+  FAIL
+}
+
+enum TRANSACTION_DESCRIPTION {
+  WALLET
+  GROUP_WALLET
+  REFERRAL
+  REFERRAL_DISCOUNT
+  VENUE_PAYMENT
+  VENUE_OUTWARD_PAYMENT
+  OUTWARD_WITHDRAWAL
+  IN_APP_TRANSFER
+}

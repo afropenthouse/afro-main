@@ -1,0 +1,282 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        padding: 30px 50px;
+        @media only screen and (max-width: 500px) {
+                padding: 15px 10px;
+    }
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            .line{
+                height: 50px;
+                width: 2px;
+                background: #000;
+            }
+            h2 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px; /* 125% */
+                color: #000;
+                @media only screen and (max-width: 500px) {
+                    font-size: 18px;
+    }
+            }
+            h1 {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 83.333% */
+                color: var(--gray-800, #1F2937);
+                @media only screen and (max-width: 500px) {
+                    font-size: 18px;
+    }
+            }
+        }
+        .right {
+            h1 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px; /* 150% */
+                color: #000;
+                @media only screen and (max-width: 500px) {
+                    font-size: 18px;
+    }
+            }
+        }
+        margin-bottom: 15px;
+    }
+    .header {
+        background:#1795D4;
+        width: 100vw;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        .header_container {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: 500px) {
+                    width: 100vw;
+                    flex-direction: column;
+                    padding: 0 10px;
+    }
+            .left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                @media only screen and (max-width: 500px) {
+                    align-self: flex-start;
+    }
+                .image{
+                        border-radius: 50%;
+                        img {
+                            border-radius: 50%;
+                        }
+                        img {
+                        @media only screen and (max-width: 500px) {
+                    width: 70px;
+                }
+                    }
+                }
+                .words {
+                    h1 {
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        color: var(--neutral-50, #F9F9F9);
+                        img {
+                        @media only screen and (max-width: 500px) {
+                    font-size: 20px;
+                    }
+                }
+                    }
+                    p {
+                        color: var(--neutral-50, #F9F9F9);
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; /* 187.5% */
+                        img {
+                        @media only screen and (max-width: 500px) {
+                    font-size: 12px;
+                    }
+                }
+                    }
+                }
+            }
+            .right {
+                @media only screen and (max-width: 500px) {
+                    align-self: flex-end;
+    }
+                a {
+                    background: var(--neutral-50, #F9F9F9);
+                    border-radius: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: var(--salaamfin-primary-100, #1795D4);
+                    display: flex;
+                    width: 85px;
+                    padding: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        // border: 2px solid red;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 500px) {
+                    width: 100vw;
+                    padding: 0 10px;
+    }
+        h2 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            color: var(--salaamfin-neutral-text, #111);
+            line-height: normal;
+            text-align: left;
+        }
+        .line {
+            height: 1px;
+            width: 491px;
+            background: #9BA2AE;
+            margin: 10px 0;
+            @media only screen and (max-width: 500px) {
+                    width: 98%;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+    }
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            @media only screen and (max-width: 500px) {
+                    align-self: center;
+    }
+            .form1 {
+                    input {
+                        padding: 3px 20px;
+                        border: 1px solid #111;
+                        border-radius: 8px;
+                        width: 100%;
+                        border: 1px solid var
+                        (--gray-400, #9BA2AE);
+                        padding: 16px 10px;
+            @media only screen and (max-width: 500px) {
+                width: 90vw;
+    }
+                    }
+                h1 {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    color:  #919094;
+                    padding-bottom: 8px;
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+    .solutions {
+        
+        h3 {
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 44.8px */
+            color: #004785;
+            margin-bottom: 10px;
+        }
+        .solutions_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            // justify-content: flex-start;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 20px;
+            
+            .solutions_card{
+                display: flex;
+                flex-direction: column;
+                // gap: 10px;
+                // border: 2px solid red;
+                background: #FFF;
+                box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.10), 0px 8px 10px -6px rgba(0, 0, 0, 0.10);
+                gap: 8px;
+                width: 100%;
+                // max-height: 500px;
+                padding: 0 20px;
+                @media only screen and (max-width: 500px) {
+                    padding: 0 20px;
+    }
+                .top {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .middle {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    padding: 0 20px;
+                    h1 {
+                        color: #111;
+                        font-size: 26px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 140%;
+                        padding-top: 7px; 
+                        @media only screen and (max-width: 500px) {
+                    font-size: 20px;
+    }
+                    }
+                    p {
+                        color: #111;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px; /* 187.5% */;
+                    }
+                }
+                .bottom {
+                    color: #1795D4;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 30px; 
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
+}
